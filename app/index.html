@@ -21,6 +21,9 @@
   <!-- endbuild -->
 
   <!-- build:css styles/main.css -->
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="/bower_components/slick-carousel/slick/slick-theme.css">
+  <link rel="stylesheet" href="/bower_components/wow/css/libs/animate.css">
   <link rel="stylesheet" href="styles/main.css">
   <!-- endbuild -->
 
@@ -42,11 +45,11 @@
     <header class="main-header">
       <nav class="navigation">
         <ul class="nav-list">
-          <li><a href="#">О нас</a></li>
-          <li><a href="#">Проекты</a></li>
-          <li><a href="#">Как мы работаем</a></li>
-          <li><a href="#">Сертификаты</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li><a class="anchor-link" href="#about-us">О нас</a></li>
+          <li><a class="anchor-link" href="#projects">Проекты</a></li>
+          <li><a class="anchor-link" href="#how-we-work">Как мы работаем</a></li>
+          <li><a class="anchor-link" href="#our-advantages">Преимущества</a></li>
+          <li><a class="anchor-link" href="#contacts">Контакты</a></li>
         </ul>
       </nav>
       <div class="header-phone-area">
@@ -57,24 +60,32 @@
 
     <!--TOP BLOCK TITLE-->
     <div class="top-block-title">
-      <h2>Дом вашей мечты под ключ<br> Разработка и строительство индивидуальных проектов</h2>
+      <h2 class="wow fadeIn" data-wow-duration=".7s">
+        <span>Дом вашей мечты под ключ</span><br>
+        <span>Разработка и строительство индивидуальных проектов</span>
+      </h2>
 
-      <h3 class="top-block-title-bordered">Быстро, качественно, в срок</h3>
+      <h3 class="top-block-title-bordered wow fadeIn" data-wow-duration=".7s" data-wow-delay=".7s">Быстро, качественно,
+        в срок</h3>
     </div>
 
     <!--ORDER AREA-->
     <div class="order-area">
 
-      <div class="order-area-title">
+      <div class="order-area-title wow fadeIn" data-wow-duration=".7s" data-wow-delay="1s">
         <span>Оставьте заявку прямо сейчас</span><br>
         <span>и получите расчет сметы - бесплатно!</span>
       </div>
 
       <form action="" class="order-form realty-form">
-        <input type="text" name="name" required placeholder="Ваше имя">
-        <input type="text" name="phone" required placeholder="Ваш телефон">
-        <input type="text" name="email" required placeholder="Ваш e-mail">
-        <input type="submit" value="Оставить заявку" class="order-send">
+        <input type="text" name="name" class="wow fadeInLeft" data-wow-duration=".5s" data-wow-delay="1.5s" required
+               placeholder="Ваше имя">
+        <input type="text" name="phone" class="wow fadeInLeft" data-wow-duration=".5s" data-wow-delay="1.6s" required
+               placeholder="Ваш телефон">
+        <input type="text" name="email" class="wow fadeInLeft" data-wow-duration=".5s" data-wow-delay="1.7s" required
+               placeholder="Ваш e-mail">
+        <input type="submit" value="Оставить заявку" class="order-send wow fadeInLeft" data-wow-duration=".5s"
+               data-wow-delay="1.8s">
       </form>
     </div>
 
@@ -83,7 +94,10 @@
 
 
 <!--ABOUT US-->
-<section class="about-us block-wrapper">
+<section class="about-us block-wrapper" id="about-us">
+
+  <div class="block-line about-us-block-line"></div>
+
   <div class="container">
     <div class="row">
       <div class="col-xs-3">
@@ -93,24 +107,54 @@
 
         <div class="about-us-nav clearfix">
           <ul class="about-us-nav-list">
-            <li><a href="#">Проектирование</a></li>
-            <li><a href="#">3D Визуализация</a></li>
-            <li><a href="#">Строительство</a></li>
-            <li><a href="#">Реконструкция</a></li>
+            <li><span>Проектирование</span></li>
+            <li><span>3D Визуализация</span></li>
+            <li><span>Строительство</span></li>
+            <li><span>Реконструкция</span></li>
           </ul>
         </div>
 
         <div class="about-us-slider">
-          <p>
-            Разработка индивидуального проекта дома, коттеджа или бани по вашему эскизу.
-            Индивидуальное проектирование дает Вам возможность создать дом своей мечты. Выбрать стилистические
-            особенности, отделочные и строительные материалы.
-          </p>
+          <div class="slide">
+            <p>
+              Разработка индивидуального проекта дома, коттеджа или бани по вашему эскизу.
+              Индивидуальное проектирование дает Вам возможность создать дом своей мечты. Выбрать стилистические
+              особенности, отделочные и строительные материалы.
+            </p>
 
-          <p>
-            При индивидуальном проекте Вы можете тщательно спроектировать расположение дома, гаража, веранды, правильно
-            выбрать внутреннюю планировку дома, расположить все помещения максимально удобно для Вас.
-          </p>
+            <p>
+              При индивидуальном проекте Вы можете тщательно спроектировать расположение дома, гаража, веранды,
+              правильно
+              выбрать внутреннюю планировку дома, расположить все помещения максимально удобно для Вас.
+            </p>
+          </div>
+          <div class="slide">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, blanditiis, et. Doloremque neque
+              placeat quod? Accusamus aliquam cupiditate eaque id numquam. Ducimus, veritatis voluptate!
+              placeat quod? Accusamus aliquam cupiditate eaque id numquam. Ducimus, veritatis voluptate!
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet animi aperiam consectetur cumque dicta
+              doloribus expedita inventore itaque maxime obcaecati omnis porro quibusdam, reprehenderit veritatis
+              voluptatem? Asperiores laudantium officia omnis quibusdam reprehenderit sunt vel.
+            </p>
+          </div>
+          <div class="slide">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur eligendi error esse magnam odio
+              quidem rem sunt voluptates. Alias aliquam, animi blanditiis consectetur cum eum explicabo labore maiores
+              modi placeat, quaerat quisquam, vel vero.
+            </p>
+
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, amet architecto asperiores commodi
+              culpa eaque fuga iusto magnam minima minus molestias mollitia nam nobis numquam odit quod sint tempore
+              veniam vero voluptate? Animi, consequatur.
+            </p>
+          </div>
+
         </div>
 
       </div>
@@ -119,17 +163,18 @@
 </section>
 
 <!--OUR WORKS-->
-<section class="our-works block-wrapper">
+<section class="our-works block-wrapper" id="projects">
 
   <div class="block-line"></div>
 
   <div class="container">
     <div class="row">
-      <div class="col-xs-6">
+      <div class="col-xs-6 our-works-cont-fix">
         <div class="block-main-title">НАШИ РАБОТЫ</div>
 
-        <div class="our-stats-slogan">Нам полсилу все, мы построем дом Вашей мечты!</div>
-        <div class="our-stats">
+        <div class="our-stats-slogan wow fadeIn" data-wow-duration=".7s">Нам полсилу все, мы построем дом Вашей мечты!
+        </div>
+        <div class="our-stats wow fadeInUp" data-wow-duration="1s">
           <div class="row">
             <div class="col-xs-12 stats-row">
               <span class="stats-text stats-bold">КАЛУЖСКОЕ ШОССЕ 30 КМ</span>
@@ -171,6 +216,12 @@
       <div class="slide">
         <img src="images/work-1.jpg" alt="">
       </div>
+      <div class="slide">
+        <img src="images/work-2.jpg" alt="">
+      </div>
+      <div class="slide">
+        <img src="images/work-3.jpg" alt="">
+      </div>
     </div>
   </div>
 
@@ -178,7 +229,7 @@
 
 
 <!--OUR ADVANTAGES-->
-<section class="our-advantages block-wrapper">
+<section class="our-advantages block-wrapper" id="our-advantages">
   <div class="container">
     <div class="block-main-title black-color text-center">НАШИ ПРЕИМУЩЕСТВА</div>
     <p class="block-main-subtitle">
@@ -193,7 +244,7 @@
         <!--Advantages left column-->
         <div class="col-xs-5 advnt-text-col">
 
-          <div class="advnt-block clearfix">
+          <div class="advnt-block clearfix wow bounceInLeft" data-wow-duration=".7s">
             <div class="advnt-block-column advnt-block-numb">01</div>
             <div class="advnt-block-column advnt-block-cont">
               <div class="advnt-block-title">УДАЧНОЕ РАСПОЛОЖЕНИЕ</div>
@@ -205,7 +256,7 @@
             </div>
           </div>
 
-          <div class="advnt-block clearfix">
+          <div class="advnt-block clearfix wow bounceInLeft" data-wow-duration=".7s">
             <div class="advnt-block-column advnt-block-numb">02</div>
             <div class="advnt-block-column advnt-block-cont">
               <div class="advnt-block-title">ОТЛИЧНОЕ КАЧЕСТВО</div>
@@ -217,7 +268,7 @@
             </div>
           </div>
 
-          <div class="advnt-block clearfix">
+          <div class="advnt-block clearfix wow bounceInLeft" data-wow-duration=".7s">
             <div class="advnt-block-column advnt-block-numb">03</div>
             <div class="advnt-block-column advnt-block-cont">
               <div class="advnt-block-title">ЭСТЕТИКА</div>
@@ -229,7 +280,7 @@
             </div>
           </div>
 
-          <div class="advnt-block clearfix">
+          <div class="advnt-block clearfix wow bounceInLeft" data-wow-duration=".7s">
             <div class="advnt-block-column advnt-block-numb">04</div>
             <div class="advnt-block-column advnt-block-cont">
               <div class="advnt-block-title">БОЛЬШОЙ АССОРТИМЕНТ</div>
@@ -247,7 +298,7 @@
 
           <div class="advtn-icon-line"></div>
 
-          <figure class="advt-icon-fig">
+          <figure class="advt-icon-fig wow fadeIn" data-wow-duration=".7s">
             <img src="images/advt-img-1.png" alt="">
 
             <div class="advt-icon-fig-title">
@@ -255,7 +306,7 @@
             </div>
           </figure>
 
-          <figure class="advt-icon-fig">
+          <figure class="advt-icon-fig wow fadeIn" data-wow-duration=".7s">
             <img src="images/advt-img-2.png" alt="">
 
             <div class="advt-icon-fig-title">
@@ -263,7 +314,7 @@
             </div>
           </figure>
 
-          <figure class="advt-icon-fig">
+          <figure class="advt-icon-fig wow fadeIn" data-wow-duration=".7s">
             <img src="images/advt-img-3.png" alt="">
 
             <div class="advt-icon-fig-title">
@@ -271,7 +322,7 @@
             </div>
           </figure>
 
-          <figure class="advt-icon-fig">
+          <figure class="advt-icon-fig wow fadeIn" data-wow-duration=".7s">
             <img src="images/advt-img-4.png" alt="">
 
             <div class="advt-icon-fig-title">
@@ -284,7 +335,7 @@
         <!--Advantages right column-->
         <div class="col-xs-5 advnt-text-col">
 
-          <div class="advnt-block advt-m-hook clearfix">
+          <div class="advnt-block advt-m-hook clearfix wow bounceInRight" data-wow-duration=".7s">
             <div class="advnt-block-column advnt-block-numb">05</div>
             <div class="advnt-block-column advnt-block-cont">
               <div class="advnt-block-title">ПРОФЕССИОНАЛЫ</div>
@@ -297,7 +348,7 @@
             </div>
           </div>
 
-          <div class="advnt-block clearfix">
+          <div class="advnt-block clearfix wow bounceInRight" data-wow-duration=".7s">
             <div class="advnt-block-column advnt-block-numb">06</div>
             <div class="advnt-block-column advnt-block-cont">
               <div class="advnt-block-title">ОПТИМАЛЬНЫЙ ПОДХОД</div>
@@ -309,7 +360,7 @@
             </div>
           </div>
 
-          <div class="advnt-block clearfix">
+          <div class="advnt-block clearfix wow bounceInRight" data-wow-duration=".7s">
             <div class="advnt-block-column advnt-block-numb">07</div>
             <div class="advnt-block-column advnt-block-cont">
               <div class="advnt-block-title">РАБОТА НА РЕЗУЛЬТАТ</div>
@@ -322,7 +373,7 @@
             </div>
           </div>
 
-          <div class="advnt-block clearfix">
+          <div class="advnt-block clearfix wow bounceInRight" data-wow-duration=".7s">
             <div class="advnt-block-column advnt-block-numb">08</div>
             <div class="advnt-block-column advnt-block-cont">
               <div class="advnt-block-title">БЫСТРЕЕ ВСЕХ</div>
@@ -341,7 +392,7 @@
 
 
 <!--HOW WE WORKS-->
-<section class="how-works block-wrapper">
+<section class="how-works block-wrapper" id="how-we-work">
   <div class="container">
     <div class="block-main-title black-color text-center">НАШИ ПРЕИМУЩЕСТВА</div>
     <div class="block-main-title-subline"></div>
@@ -353,12 +404,12 @@
       <div class="container">
         <div class="col-xs-6 how-works-block">
           <div class="how-works-item clearfix">
-            <div class="how-works-icon">
+            <div class="how-works-icon wow fadeInLeft" data-wow-duration="1s">
               <img src="images/hwi-1.png" alt="">
             </div>
             <div class="how-works-text">
-              <div class="how-works-item-title">Звонок/заявка</div>
-              <div class="how-works-item-desc">
+              <div class="how-works-item-title wow fadeInDown" data-wow-duration=".7s">Звонок/заявка</div>
+              <div class="how-works-item-desc wow fadeInUp" data-wow-duration=".7s">
                 Оставьте заявку сейчас и мы
                 свяжемся с Вами в течение 10 минут
               </div>
@@ -367,10 +418,10 @@
           <div class="how-works-action">
             <div class="row">
 
-              <div class="hw-action-btn hw-border-right">
+              <div class="hw-action-btn hw-border-right wow fadeInLeft" data-wow-duration=".7s">
                 <a href="#" class="realty-btn">ОСТАВИТЬ ЗАЯВКУ</a>
               </div>
-              <div class="hw-action-contacts">
+              <div class="hw-action-contacts wow fadeInRight" data-wow-duration=".7s">
                 <a href="tel:+74950035868" class="hw-phone">+7 (495) 003-58-68</a>
                 <a href="tel:+74950035812" class="hw-phone">+7 (495) 003-58-12</a>
               </div>
@@ -386,12 +437,12 @@
       <div class="container">
         <div class="col-xs-6 how-works-block hw-right-container">
           <div class="how-works-item clearfix">
-            <div class="how-works-icon">
+            <div class="how-works-icon wow fadeInLeft" data-wow-duration=".7s">
               <img src="images/hwi-2.png" alt="">
             </div>
             <div class="how-works-text">
-              <div class="how-works-item-title">Личная встреча</div>
-              <div class="how-works-item-desc">
+              <div class="how-works-item-title wow fadeInUp" data-wow-duration=".7s">Личная встреча</div>
+              <div class="how-works-item-desc wow fadeInDown" data-wow-duration=".7s">
                 Детали строительства, уточнение
                 нюансов обсуждается при личной встрече
               </div>
@@ -400,10 +451,10 @@
           <div class="how-works-action">
             <div class="row">
 
-              <div class="hw-action-btn hw-border-right">
+              <div class="hw-action-btn hw-border-right wow fadeInLeft" data-wow-duration=".7s">
                 <a href="#" class="realty-btn">skype конференция</a>
               </div>
-              <div class="hw-action-contacts">
+              <div class="hw-action-contacts wow fadeInRight" data-wow-duration=".7s">
                 <div class="hw-some-text">
                   любые вопросы<br>
                   в режиме online
@@ -421,12 +472,12 @@
       <div class="container">
         <div class="col-xs-6 how-works-block">
           <div class="how-works-item clearfix">
-            <div class="how-works-icon">
+            <div class="how-works-icon wow fadeInLeft" data-wow-duration=".7s">
               <img src="images/hwi-3.png" alt="">
             </div>
             <div class="how-works-text">
-              <div class="how-works-item-title">Создание проекта</div>
-              <div class="how-works-item-desc">
+              <div class="how-works-item-title wow fadeInUp" data-wow-duration=".7s">Создание проекта</div>
+              <div class="how-works-item-desc wow fadeInDown" data-wow-duration=".7s">
                 Разработка проекта с учетом всех
                 деталей и составление подробной
                 проектной сметы
@@ -442,12 +493,12 @@
       <div class="container">
         <div class="col-xs-6 how-works-block hw-right-container">
           <div class="how-works-item clearfix">
-            <div class="how-works-icon">
+            <div class="how-works-icon wow fadeInRight" data-wow-duration=".7s">
               <img src="images/hwi-4.png" alt="">
             </div>
             <div class="how-works-text">
-              <div class="how-works-item-title">Начало строительства</div>
-              <div class="how-works-item-desc">
+              <div class="how-works-item-title wow fadeInUp" data-wow-duration=".7s">Начало строительства</div>
+              <div class="how-works-item-desc wow fadeInDown" data-wow-duration=".7s">
                 После утверждения сметы
                 начинается строительство вашего
                 дома
@@ -463,12 +514,12 @@
       <div class="container">
         <div class="col-xs-6 how-works-block">
           <div class="how-works-item clearfix">
-            <div class="how-works-icon">
+            <div class="how-works-icon wow fadeInLeft" data-wow-duration=".7s">
               <img src="images/hwi-5.png" alt="">
             </div>
             <div class="how-works-text">
-              <div class="how-works-item-title">Сдача проекта</div>
-              <div class="how-works-item-desc">
+              <div class="how-works-item-title wow fadeInUp" data-wow-duration=".7s">Сдача проекта</div>
+              <div class="how-works-item-desc wow fadeInDown" data-wow-duration=".7s">
                 По завершению строительства
                 проект сдается заказчику
               </div>
@@ -485,20 +536,45 @@
 
 
 <!--CONTACTS-->
-<section class="contacts block-wrapper">
+<section class="contacts block-wrapper" id="contacts">
 
-  <div class="block-line"></div>
+  <div class="block-line contacts-block-line"></div>
 
   <div class="container">
 
     <div class="col-xs-6">
       <div class="block-main-title">Контакты</div>
+
+      <div class="contacts-cont-area">
+        <div class="contacts-self">
+          <span class="mail wow fadeInLeft" data-wow-duration=".7s">gooddom@gmail.com</span>
+          <a href="tel:+74950035868" class="contacts-phone wow fadeInLeft" data-wow-duration=".7s">+7 (495)
+            003-58-68</a>
+        </div>
+        <div class="contacts-worktime">
+          <div class="work-time-title wow fadeInUp" data-wow-duration=".7s">Время работы</div>
+          <div class="work-time-time wow fadeInUp" data-wow-duration=".7s">8:00 до 18:00</div>
+          <div class="work-time-day wow fadeInUp" data-wow-duration=".7s">Выходной: суббота воскресенье</div>
+        </div>
+        <div class="contacts-question">
+          <div class="question-title wow fadeInUp" data-wow-duration=".7s">Остались вопросы?</div>
+          <div class="question-text wow fadeInUp" data-wow-duration=".7s">
+            Если у Вас остались вопросы, мы с удовольствием<br>
+            на них ответим
+          </div>
+        </div>
+        <div class="contacts-action wow bounceInLeft" data-wow-duration=".7s">
+          <a href="#" class="realty-btn">Заказать звонок</a>
+        </div>
+      </div>
     </div>
 
   </div>
   <div class="contacts-map-area">
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387145.86626889417!2d-74.2581879779189!3d40.70531105474913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1463067480323"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387145.86626889417!2d-74.2581879779189!3d40.
+      70531105474913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2z0J
+      3RjNGOLdCZ0L7RgNC6LCDQodCo0JA!5e0!3m2!1sru!2sru!4v1463067480323"
       frameborder="0" style="border:0" allowfullscreen></iframe>
   </div>
 
@@ -507,7 +583,19 @@
 
 <!--FOOTER-->
 <footer class="main-footer block-wrapper">
-  <div class="container"></div>
+  <div class="container">
+    <nav class="footer-nav">
+      <ul class="footer-nav-list">
+        <li><a class="anchor-link" href="#about-us">О нас</a></li>
+        <li><a class="anchor-link" href="#projects">Проекты</a></li>
+        <li><a class="anchor-link" href="#how-we-work">Как мы работаем</a></li>
+        <li><a class="anchor-link" href="#our-advantages">Преимущества</a></li>
+      </ul>
+    </nav>
+    <div class="cpoyright-area">
+      &copy; 2016 Все права защищены
+    </div>
+  </div>
 </footer>
 
 
@@ -548,6 +636,8 @@
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/scrollspy.js"></script>
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/collapse.js"></script>
 <script src="/bower_components/bootstrap-sass/assets/javascripts/bootstrap/tab.js"></script>
+<script src="/bower_components/slick-carousel/slick/slick.min.js"></script>
+<script src="/bower_components/wow/dist/wow.min.js"></script>
 <!-- endbuild -->
 
 <!-- build:js scripts/main.js -->
