@@ -34,6 +34,27 @@ $(function() {
     cssEase: 'linear'
   });
 
+  // Items gallery slider
+  var $igb = $('.item-gallery-big'),
+    $ign = $('.item-gallery-nav');
+
+  $igb.slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.item-gallery-nav'
+  });
+  $ign.slick({
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    asNavFor: '.item-gallery-big',
+    dots: false,
+    centerMode: false,
+    arrows: true,
+    focusOnSelect: true
+  });
+
 
   // Anchor funct
   var $aLink = $('.anchor-link');
@@ -45,6 +66,11 @@ $(function() {
     $('body, html').animate({
       scrollTop: aTarget
     }, 700);
+  });
+
+  lightbox.option({
+    'resizeDuration': 200,
+    'wrapAround': true
   });
 
 });
